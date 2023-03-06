@@ -1,6 +1,9 @@
 {
-    "name": "rpi-pico",
+    "name": "rpi2040",
     "description": "Support for Raspberry Pi Pico RP2040 - beta",
+    "dependencies": {
+        "core---rp2040": "file:../core---rp2040"
+    },
     "files": [
         "README.md",
         "device.d.ts",
@@ -8,12 +11,17 @@
         "board.json",
         "board.svg"
     ],
+    "public": true,
+    "targetVersions": {
+        "target": "0.15.66",
+        "targetId": "maker"
+    },
+    "supportedTargets": [
+        "maker"
+    ],
+    "preferredEditor": "tsprj",
     "core": true,
     "compileServiceVariant": "rp2040",
-    "dependencies": {
-        "core---rp2040": "file:../core---rp2040"
-    },
-    "public": true,
     "features": [
         "pinled",
         "pind0",
