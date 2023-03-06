@@ -1,1 +1,4 @@
-# pxt-rpi2040
+# Pico
+
+The RPi Pico library.
+
